@@ -1,0 +1,6 @@
+# thanos
+
+## License
+
+MIT
+

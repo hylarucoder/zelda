@@ -1,0 +1,28 @@
+RunMode: "debug"
+
+SecretKey: "sec key"
+
+Gin:
+  HttpPort: 8888
+  ReadTimeout: 60
+  WriteTimeout: 60
+
+MySQL:
+  User: "root"
+  Password: "root"
+  Host: "127.0.0.1"
+  Port: 3306
+  Name: "thanos"
+  TablePrefix: "thanos_"
+
+Redis:
+  Host: "redis"
+  Port: 1234
+
+ElasticSearch:
+  Host: "elasticsearch"
+  Port: 9300
+
+Sentry:
+  Url: "https://asdasd:asdasd@sentry.io/asdasd"
+
