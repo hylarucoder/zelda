@@ -1,11 +1,11 @@
 package main
 
 import (
-	//"encoding/json"
+	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
-	"github.com/twocucao/thanos/thanos"
+	"github.com/twocucao/thanos/web"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -24,7 +24,8 @@ func TestHelloWorld(t *testing.T) {
 	//	"hello": "world",
 	//}
 	// Grab our router
-	router := thanos.InitRouter()
+	router := gin.New()
+	web.InitRouter(router)
 	// Perform a GET request with that handler.
 	w := performRequest(router, "GET", "/test")
 	// Assert we encoded correctly,

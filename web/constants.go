@@ -1,4 +1,4 @@
-package thanos
+package web
 
 const (
 	SUCCESS        = 200
