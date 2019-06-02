@@ -1,4 +1,4 @@
-package thanos
+package web
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/twocucao/thanos/thanos/settings"
+	"github.com/twocucao/thanos/settings"
 )
 
 //func formatAsDate(t time.Time) string {
@@ -21,7 +21,6 @@ func HttpServer() {
 	// 2. 查看相关组建
 	// 3. 启动服务
 	// router := InitRouter()
-	// 4.
 	gin.SetMode(settings.GetConfig().RunMode)
 	r := gin.New()
 	r.Use(gin.Logger())

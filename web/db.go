@@ -1,10 +1,10 @@
-package thanos
+package web
 
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/twocucao/thanos/thanos/settings"
+	"github.com/twocucao/thanos/settings"
 	"log"
 )
 

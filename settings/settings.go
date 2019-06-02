@@ -56,7 +56,7 @@ func Init(env string) {
 	settings = viper.New()
 	settings.SetConfigType("yaml")
 	settings.SetConfigName(env)
-	settings.AddConfigPath("./thanos/settings/")
+	settings.AddConfigPath("./settings/")
 	err = settings.ReadInConfig()
 	if err != nil {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))

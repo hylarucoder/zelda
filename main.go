@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/twocucao/thanos/thanos"
+	"github.com/twocucao/thanos/web"
 	"github.com/urfave/cli"
 	"log"
 	"os"
@@ -36,7 +36,16 @@ func main() {
 			Aliases: []string{"s"},
 			Usage:   "serve",
 			Action: func(c *cli.Context) error {
-				thanos.HttpServer()
+				web.HttpServer()
+				return nil
+			},
+		},
+		{
+			Name:    "validator",
+			Aliases: []string{"v"},
+			Usage:   "serve",
+			Action: func(c *cli.Context) error {
+				web.ValidateForm()
 				return nil
 			},
 		},
