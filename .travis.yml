@@ -1,0 +1,9 @@
+language: go
+
+go:
+- 1.12.x
+
+script:
+  - go build main.go
+  - go test -v ./...
+
