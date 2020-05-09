@@ -1,4 +1,4 @@
-package web
+package www
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/twocucao/thanos/settings"
+	"github.com/twocucao/zelda/app/www/conf"
 )
 
 //func formatAsDate(t time.Time) string {
@@ -16,12 +16,12 @@ import (
 
 func HttpServer() {
 	// 1. 读取配置
-	settings.Init("development")
-	config := settings.GetConfig()
+	conf.Init("development")
+	config := conf.GetConfig()
 	// 2. 查看相关组建
 	// 3. 启动服务
 	// router := InitRouter()
-	gin.SetMode(settings.GetConfig().RunMode)
+	gin.SetMode(conf.GetConfig().RunMode)
 	r := gin.New()
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
