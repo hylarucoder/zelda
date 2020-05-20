@@ -1,10 +1,10 @@
-package web
+package www
 
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/twocucao/thanos/settings"
+	"github.com/twocucao/zelda/app/www/conf"
 	"log"
 )
 
@@ -12,7 +12,7 @@ var db *gorm.DB
 
 func init() {
 
-	config := settings.GetConfig()
+	config := conf.GetConfig()
 
 	db, err := gorm.Open(
 		"mysql",

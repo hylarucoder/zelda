@@ -16,3 +16,5 @@
 
 .idea/
 main
+vendor/
+.DS_Store

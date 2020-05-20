@@ -1,4 +1,4 @@
-package settings
+package conf
 
 import (
 	"fmt"
@@ -56,7 +56,7 @@ func Init(env string) {
 	settings = viper.New()
 	settings.SetConfigType("yaml")
 	settings.SetConfigName(env)
-	settings.AddConfigPath("./settings/")
+	settings.AddConfigPath("./conf/")
 	err = settings.ReadInConfig()
 	if err != nil {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))

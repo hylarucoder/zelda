@@ -12,8 +12,8 @@ MySQL:
   Password: "root"
   Host: "127.0.0.1"
   Port: 3306
-  Name: "thanos"
-  TablePrefix: "thanos_"
+  Name: "zelda"
+  TablePrefix: "zelda_"
 
 Redis:
   Host: "redis"
