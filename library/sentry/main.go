@@ -1,4 +1,4 @@
-package library
+package sentry
 
 import (
 	"errors"
