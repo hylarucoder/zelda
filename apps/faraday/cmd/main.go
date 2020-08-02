@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/twocucao/zelda/app/www"
+	"github.com/twocucao/zelda/apps/www"
 	"github.com/twocucao/zelda/library/environments"
 	"os"
 )
@@ -10,7 +10,7 @@ import (
 type contextKey int
 
 const (
-	// ServiceName is how this app is identified in logs and error handlers
+	// ServiceName is how this apps is identified in logs and error handlers
 	ServiceName          string     = "faraday"
 	userID               contextKey = iota // Used for gorilla/context
 	userSudo             contextKey = iota // Used for gorilla/context

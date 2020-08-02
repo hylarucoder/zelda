@@ -2,9 +2,7 @@ package www
 
 import (
 	"fmt"
-	"gopkg.in/go-playground/validator.v9"
 )
-
 
 // User contains user information
 type User struct {
