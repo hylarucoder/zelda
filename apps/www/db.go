@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/twocucao/zelda/app/www/conf"
 	"log"
+	"zelda/library/conf"
 )
 
 var db *gorm.DB

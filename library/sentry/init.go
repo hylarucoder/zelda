@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/getsentry/raven-go"
 	"github.com/gin-gonic/gin"
 )
 
