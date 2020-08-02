@@ -2,6 +2,7 @@ package www
 
 import (
 	"fmt"
+	"github.com/go-playground/validator/v10"
 )
 
 // User contains user information

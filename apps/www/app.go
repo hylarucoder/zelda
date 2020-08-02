@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"zelda/conf"
+	"zelda/library/conf"
 )
 
 //func formatAsDate(t time.Time) string {

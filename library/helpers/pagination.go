@@ -1,9 +1,9 @@
 package helpers
 
 import (
-	"github.com/unknwon/com"
 	"github.com/gin-gonic/gin"
-	"zelda/conf"
+	"github.com/unknwon/com"
+	"zelda/library/conf"
 )
 
 func GetPage(c *gin.Context) int {
