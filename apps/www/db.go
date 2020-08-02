@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/twocucao/zelda/conf"
+	"zelda/conf"
 	"log"
 )
 

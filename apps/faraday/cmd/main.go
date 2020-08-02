@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/twocucao/zelda/apps/www"
-	"github.com/twocucao/zelda/library/environments"
+	"zelda/apps/www"
+	"zelda/library/environments"
 	"os"
 )
 

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"zelda/apps/www"
 
-	"github.com/twocucao/zelda/apps/www"
 	"github.com/urfave/cli"
 )
 
