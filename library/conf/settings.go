@@ -15,7 +15,7 @@ type GinConfig struct {
 	WriteTimeout int
 }
 
-type MySQLConfig struct {
+type PostgreSQL struct {
 	User        string
 	Password    string
 	Host        string
@@ -43,7 +43,7 @@ type AppConfig struct {
 	SecretKey string
 
 	Gin           GinConfig
-	MySQL         MySQLConfig
+	PostgreSQL    PostgreSQL
 	Redis         RedisConfig
 	ElasticSearch ElasticSearchConfig
 	Sentry        SentryConfig

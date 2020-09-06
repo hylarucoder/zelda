@@ -18,17 +18,17 @@ func init() {
 		"mysql",
 		fmt.Sprintf(
 			"%s:%s@tcp(%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
-			config.MySQL.User,
-			config.MySQL.Password,
-			config.MySQL.Host,
-			config.MySQL.Name))
+			config.PostgreSQL.User,
+			config.PostgreSQL.Password,
+			config.PostgreSQL.Host,
+			config.PostgreSQL.Name))
 
 	if err != nil {
 		log.Println(err)
 	}
 
 	gorm.DefaultTableNameHandler = func(db *gorm.DB, defaultTableName string) string {
-		return config.MySQL.TablePrefix + defaultTableName
+		return config.PostgreSQL.TablePrefix + defaultTableName
 	}
 
 	db.SingularTable(true)

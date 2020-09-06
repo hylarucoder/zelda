@@ -15,4 +15,5 @@ require (
 	github.com/urfave/cli v1.22.4
 	golang.org/x/crypto v0.0.0-20191205180655-e7c4368fe9dd
 	gopkg.in/intercom/intercom-go.v2 v2.0.0-20200217143803-6ffc0627261a
+	gorm.io/gorm v1.20.0 // indirect
 )
