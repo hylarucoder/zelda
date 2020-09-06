@@ -1,4 +1,4 @@
-package www
+package open
 
 const (
 	SUCCESS        = 200

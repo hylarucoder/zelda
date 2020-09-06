@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"zelda/apps/www"
+	"zelda/apps/open"
 
 	"github.com/urfave/cli"
 )
@@ -32,7 +32,7 @@ func main() {
 			Aliases: []string{"s"},
 			Usage:   "serve",
 			Action: func(c *cli.Context) error {
-				www.HttpServer()
+				open.HttpServer()
 				return nil
 			},
 		},
@@ -41,7 +41,7 @@ func main() {
 			Aliases: []string{"v"},
 			Usage:   "serve",
 			Action: func(c *cli.Context) error {
-				www.ValidateForm()
+				open.ValidateForm()
 				return nil
 			},
 		},

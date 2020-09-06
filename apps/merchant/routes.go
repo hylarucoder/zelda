@@ -1,8 +1,8 @@
-package admin
+package merchant
 
 import (
 	"github.com/gin-gonic/gin"
-	"zelda/apps/admin/api"
+	"zelda/apps/merchant/api"
 )
 
 func InitGroup(group *gin.RouterGroup) {
@@ -14,7 +14,7 @@ func InitGroup(group *gin.RouterGroup) {
 }
 
 func InitRoutes(r *gin.Engine) {
-	V1 := r.Group("/api/v1/admin")
+	V1 := r.Group("/api/v1/merchant")
 	{
 		InitGroup(V1)
 	}

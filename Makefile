@@ -19,4 +19,4 @@ nothing: ## nothing
 	echo "nothing"
 
 build: ## :gazelle
-	bazel run //:gazelle
+	go build zelda.go

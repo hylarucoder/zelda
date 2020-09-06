@@ -1,4 +1,4 @@
-package admin
+package official
 
 import (
 	"github.com/gin-gonic/gin"
@@ -14,7 +14,7 @@ func InitGroup(group *gin.RouterGroup) {
 }
 
 func InitRoutes(r *gin.Engine) {
-	V1 := r.Group("/api/v1/admin")
+	V1 := r.Group("/api/v1/offcial")
 	{
 		InitGroup(V1)
 	}

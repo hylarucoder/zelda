@@ -1,8 +1,9 @@
-package admin
+package operation
 
 import (
 	"github.com/gin-gonic/gin"
-	"zelda/apps/admin/api"
+	"zelda/apps/operation/api"
+	"zelda/apps/operation/ws"
 )
 
 func InitGroup(group *gin.RouterGroup) {
@@ -11,10 +12,11 @@ func InitGroup(group *gin.RouterGroup) {
 	group.GET("/categories", api.GetTags)
 	group.GET("/articles", api.GetTags)
 	group.GET("/article/:id", api.GetTags)
+	group.GET("/danmu", ws.DanmuRoom)
 }
 
 func InitRoutes(r *gin.Engine) {
-	V1 := r.Group("/api/v1/admin")
+	V1 := r.Group("/api/v1/operation")
 	{
 		InitGroup(V1)
 	}
